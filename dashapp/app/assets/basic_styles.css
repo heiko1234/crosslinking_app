@@ -1,0 +1,129 @@
+
+
+:root{
+    --green-1: #b6ffb6;
+    --green-2: #d3e6d3;
+    --green-3: #00e600;
+    --green-4: #00b300;
+    --green-5: #008000;
+    --green-6: #004d00;
+    --grey-1: #f2f2f2;
+    --grey-2: #8d8d8d;
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #e8e9e8;
+}
+
+.app_wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.app_header{
+    padding: 0.75rem;
+    background-color: var(--green-5);
+    display: flex;
+    align-items: center;
+}
+
+.app_header_logo{
+    height: 4rem;
+    padding-right: 1.5rem;
+    filter: drop-shadow(0 0 0.5rem var(--green-5));
+    transition: transform 0.2s;
+}
+
+.app_header_logo:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 0.5rem var(--green-2));
+}
+
+
+.app_header span{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+.app_card_wrapper{
+    position: relative;
+    bottom: 0;
+    display: grid;
+    padding: 1.25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+}
+
+
+
+.app_card{
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    /* box-shadow: 0 0.0625rem 0.125rem rgba(0,0,0,1), 0 1.25rem 1.5625rem -0.3215rem rgba(0,0,0,1) 0 0.0625rem 0.0625rem -0.3125rem; */
+    box-shadow: 0 0 0.125rem var(--grey-2);
+    transition: transform .2s;
+}
+
+
+.app_card:hover{
+    transform: scale(1.005);
+    box-shadow: 0 0 1.5rem var(--green-5);
+}
+
+
+.app_card_icon{
+    width: 2.5rem
+}
+
+.app_card_title::after{
+    content: "";
+    display: block;
+    background-color: var(--green-4);
+    width: 3rem;
+    height: 0.125rem;
+    margin-top: 0.75rem;
+}
+
+
+
+.app_card_link{
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;
+    text-decoration: none;
+    color: var(--green-5);
+    border-radius: 0.25rem;
+    background-color: var(--green-1);
+    /* background: linear-gradient(90deg, var(--green-1) 0%, var(--green-2) 100%); */
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.app_card_links_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+
+.app_card_link:first-child{
+    margin-right: 2rem;
+}
+
+
+

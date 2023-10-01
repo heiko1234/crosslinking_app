@@ -1,0 +1,1 @@
+"Es ist Unwürdigit die Zeit von hervrragenden Menschen mit Rechenarbeiten zu verschwenden." Leibnitz
