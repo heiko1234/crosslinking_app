@@ -6,7 +6,7 @@ from dash import Dash, html
 
 from flask import Flask
 
-from app.utils.app_cards import create_app_card
+from app.utils.app_cards import create_app_card, create_ai_app_card
 
 
 
@@ -69,6 +69,12 @@ app.layout = html.Div(
                 #     app_description="a short description.",
                 #     app_link="#",
                 # ),
+                create_ai_app_card(
+                    app_title="AI Mate",
+                    app_icon_filename="ai1.png",
+                    app_description="AI Mate is a tool that allows you to upload and analyze your data using machine learning.",
+                    app_link=f"https://{baselink}ai_mate",
+                ),
             ],
             className="app_card_wrapper",
         )
